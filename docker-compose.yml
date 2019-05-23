@@ -1,0 +1,19 @@
+version: '3'
+
+services:
+  db:
+    image: postgis
+    build: .
+    container_name: postgis
+    environment:
+      POSTGRES_DB: postgis
+      POSTGRES_USER: postgis
+      POSTGRES_PASSWORD: mysecretpassword
+    volumes:
+      - dbdata:/var/lib/postgresql/data
+    ports:
+      - 5432:5432
+
+volumes:
+  dbdata:
+    driver: local
