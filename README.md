@@ -1,6 +1,7 @@
 # docker-postgis
 
-docker image for a postgis database server
+PostGIS Docker image based on [docker.io/postgis/postgis](https://hub.docker.com/r/postgis/postgis), with some extensions added:
+- pgrouting
 
 ## How to start
 
